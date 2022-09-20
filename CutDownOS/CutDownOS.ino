@@ -6,6 +6,7 @@
 */
 
 #include <LiquidCrystal.h>
+#include <Servo.h>
 #define READY 18
 #define SW_MODE2 25
 #define BTN1 19
@@ -22,6 +23,9 @@ bool setTime_state = 0;
 bool starting = 0;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
+Servo myservo;
+ 
+
 void setup() {
   lcd.begin(16, 2);
 
@@ -36,6 +40,7 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(START), start, RISING);
 
   lcd.print("CutDownOS Alpha");
+  delay(1000);
 }
 
 void base(){
@@ -50,6 +55,19 @@ void loop(){
     digitalWrite(9, 1);
   } else {
     digitalWrite(9, 0);
+  }
+}
+
+void servo_release(){
+  int pos = 0;
+  for (pos = 0; pos <= 180; pos += 1) { 
+    // in steps of 1 degree
+    myservo.write(pos);              
+    delay(15);                       
+  }
+  for (pos = 180; pos >= 0; pos -= 1) { 
+    myservo.write(pos);              
+    delay(15);                       
   }
 }
 
@@ -68,8 +86,12 @@ void running(){
       run = 0;
     }
   }
-  lcd.clear()
+
+  lcd.clear();
   lcd.print("timer done!");
+  myservo.attach(8);
+  servo_release();
+
 }
 
 void start(){
@@ -157,6 +179,7 @@ void setTime(){
 }
 
 void readyState(){
+  myservo.attach(8);
   ready_state = 1;
   lcd.clear();
   lcd.setCursor(5,0);
