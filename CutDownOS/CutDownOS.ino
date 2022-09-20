@@ -6,7 +6,6 @@
 */
 
 #include <LiquidCrystal.h>
-#include <Servo.h>
 #define READY 18
 #define SW_MODE2 25
 #define BTN1 19
@@ -23,7 +22,7 @@ bool setTime_state = 0;
 bool starting = 0;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
-Servo myservo;
+
  
 
 void setup() {
@@ -35,9 +34,11 @@ void setup() {
   pinMode(READY, INPUT_PULLUP);
   pinMode(START, INPUT_PULLUP);
   pinMode(9, OUTPUT);
+  pinMode(8, OUTPUT);
   attachInterrupt(digitalPinToInterrupt(READY), readyState, RISING);
   attachInterrupt(digitalPinToInterrupt(BTN1), setTime, RISING);
   attachInterrupt(digitalPinToInterrupt(START), start, RISING);
+
 
   lcd.print("CutDownOS Alpha");
   delay(1000);
@@ -59,17 +60,19 @@ void loop(){
 }
 
 void servo_release(){
-  int pos = 0;
-  for (pos = 0; pos <= 180; pos += 1) { 
-    // in steps of 1 degree
-    myservo.write(pos);              
-    delay(15);                       
+  for(int i = 0; i < 120; i++){
+    digitalWrite(8, HIGH);
+    delay(400);
+    digitalWrite(8, LOW);
   }
-  for (pos = 180; pos >= 0; pos -= 1) { 
-    myservo.write(pos);              
-    delay(15);                       
+  for(int i = 0; i < 10000; i++){
+    digitalWrite(8, HIGH);
+    delay(0);
+    digitalWrite(8, LOW);
   }
+
 }
+
 
 void running(){
   bool run = 1;
@@ -87,10 +90,10 @@ void running(){
     }
   }
 
+  servo_release();
   lcd.clear();
   lcd.print("timer done!");
-  myservo.attach(8);
-  servo_release();
+  //myservo.attach(8);
 
 }
 
@@ -156,6 +159,7 @@ void setTime(){
         printHours();
       delay(40000);
       } else {
+        servo_release();
         hours++;
         printHours();
         delay(40000);
@@ -179,7 +183,6 @@ void setTime(){
 }
 
 void readyState(){
-  myservo.attach(8);
   ready_state = 1;
   lcd.clear();
   lcd.setCursor(5,0);
