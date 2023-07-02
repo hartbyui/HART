@@ -35,10 +35,12 @@ def getDirs():
         f = os.path.join(csvDir, filename)
         # checking if it is a file
         if os.path.isfile(f):
+            file_stat = os.stat(f)
+            size = file_stat.st_size
             tester = f.split('\\')
             length = len(tester)
             tester = tester[length -1][0:3]
-            if f != csvDir + r'%s' % '\\' + 'ALTAConcat.py' and tester == 'GPS':
+            if f != csvDir + r'%s' % '\\' + 'ALTAConcat.py' and tester == 'GPS' and size > 0:
                 directorys.append(str(f))
 
 def getData():
@@ -49,21 +51,22 @@ def getData():
                 csv_reader = csv.reader(csv_file, delimiter=',')
                 line_count = 0
                 for row in csv_reader:
-                    time_ = str(row[0])
-                    coords = (str(row[4][11:18].strip()), str('-'+row[5].strip()))
-                    speed_ = str(row[8].strip())
-                    angle_ = str(row[9][7:].strip())
-                    altatude_ = str(row[10][10:].strip())
-                    if dataDate != row[1][7:]:
-                        dataDate = row[1][7:]
-                    coordnets.append(coords)
-                    speed.append(speed_)
-                    angle.append(angle_)
-                    altatude.append(altatude_)
-                    time.append(time_)
-                    print(time_, coords, '', row[8].strip(), '', row[9][7:].strip(), '', row[10][10:].strip())
-                    
-                    line_count += 1
+                    if len(row) > 10:
+                        time_ = str(row[0])
+                        coords = (str(row[4][11:18].strip()), str('-'+row[5].strip()))
+                        speed_ = str(row[8].strip())
+                        angle_ = str(row[9][7:].strip())
+                        altatude_ = str(row[10][10:].strip())
+                        if dataDate != row[1][7:]:
+                            dataDate = row[1][7:]
+                        coordnets.append(coords)
+                        speed.append(speed_)
+                        angle.append(angle_)
+                        altatude.append(altatude_)
+                        time.append(time_)
+                        print(time_, coords, '', row[8].strip(), '', row[9][7:].strip(), '', row[10][10:].strip())
+                        
+                        line_count += 1
 
 getDirs()
 getData()
