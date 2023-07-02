@@ -1,0 +1,2 @@
+16:15:40.984, Date: 1/7/23, Fix: 1,  quality: 2, Location: 43.7849N, 112.0001, W, Speed (knots): , 25.13, Angle: 119.44, Altitude: 16691.00, Satellites: 10
+16:15:43.0, Date: 1/7/23, Fix: 1,  quality: 2, Location: 43.7848N, 111.9999, W, Speed (knots): , 25.41, Angle: 116.91, Altitude: 16654.40, Satellites: 10
