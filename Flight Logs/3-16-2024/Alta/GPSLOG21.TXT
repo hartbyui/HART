@@ -1,0 +1,1 @@
+15:24:12.984, Date: 16/3/24, Fix: 1,  quality: 2, Location: 43.8464N, 112.2565, W, Speed (knots): , 7.97, Angle: 355.16, Altitude: 1512.80, Satellites: 10
