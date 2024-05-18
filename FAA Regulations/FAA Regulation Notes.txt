@@ -1,0 +1,34 @@
+Unmanned Free Balloon:
+
+We can launch and recover from anywhere provided we have the owner's permission (101.5).
+
+Night flying allowed if lights are visible for at least 5 miles with flash frequncy of 40-100 cycles per minute (101.35b).
+
+Musts:
+*Get ATC permission (101.33a).
+*Mostly clear day (use cut-down if it changes) (101.33b & 101.35a).
+*Not launched near lots of people (101.33d).
+*Two independant cut-downs (101.35a1).
+*Radar reflective in the 200-2700MHz range (101.35a3).
+*Not have rope attached that is longer than 50ft (101.35c & d).
+
+ATC Prelaunch Notice (101.37):
+*Make 24hrs minimum before launch, unless critical time element is happening (northern lights, eclispe, etc.).
+*Balloon identification.
+*Estamated launch time.
+*Location of launch.
+*Crusing altitude.
+*Forecasted trajectory to crusing altitude or to height of 60,000ft (whichever is lower).
+*The length and diameter of the balloon.
+*Length of the suspension device.
+*Weight of the payload.
+*Length of the trailing antenna.
+*Flight length.
+*Time and location of impact with Earth.
+
+ATC Flight Notices:
+*Call when launch has happened (101.37d).
+*Record balloon position at least every 2hrs (101.39a).
+*One hour before descent tell ATC position, altitude, trajectory, estimated time of impact with Earth (101.39b).
+
+Tell ATC when flight is over (101.39d).
