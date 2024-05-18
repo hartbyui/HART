@@ -34,7 +34,7 @@
         <header class="header-bg">
             <div class="row align-items-center justify-content-center text-center">
                 <div class="col-auto">
-                    <img src="Web/Logo.png" alt="Logo" style="width: 150px;"> <!-- Adjust path as needed -->
+                    <img src="Web/pics/Logo.png" alt="Logo" style="width: 150px;"> <!-- Adjust path as needed -->
                 </div>
                 <div class="col">
                     <h1>BYU-I High Altitude Research Team</h1>
@@ -44,7 +44,8 @@
             <div class="row">
                 <div class="col-12">
                     <ul class="nav nav-justified">
-                        <li class="nav-item"><a href="https://www.byui.edu/physics/" target = "_blank" class="nav-link">Physics Dept.</a></li>
+                        <li class="nav-item"><a href="https://www.byui.edu/physics/" target = "_blank" class="nav-link">Physics Department</a></li>
+                        <li class="nav-item"><a href="Web/reff.html" class="nav-link">HART Refference</a></li>
                         <li class="nav-item"><a href="https://www.byui.edu/" target = "_blank" class="nav-link">BYUI-Home page</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Lidar Project</a></li>
                     </ul>
@@ -54,24 +55,30 @@
         
 
 <!-- Main Content -->
-<div class="container mt-4">
-    <div class="row">
-        <!-- Left Column for Calendar and News -->
-        <div class="col-md-6">
-            <h3>Current month calendar</h3>
-            <div class="border p-3" id="calendar">Calendar goes here</div>
-            
-            <h3 class = "pt-3">Meeting information</h3>
-            <div class="border p-3"> 
-                <p>
-                    HM: Hart Meeting, Romny Room 127<br>
-                    Flight: Meet in the lab between 6:30 - 7:00 AM
-                </p>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Left Column for Calendar and News -->
+            <div class="col-md-6">           
+                <h3 class = "">Meeting Information Spring 2024</h3>
+                <div class="border p-3"> 
+                    <p>
+                        <h5>Meetings:</h5> Every Thrsday at 5:00pm, Romny 127<br><br>
+                        <h5>Next Flight:</h5> May 18th
+                    </p>
+                </div>
+                
+                <h3 class = "pt-3">News and Flight details</h3>
+                <div class="border p-3">
+                    <h5>Meetings:</h5> 
+                    <p>All are welcome to meetings!, any major and no experence is required</p>
+                    <h5>May 18th Flight:</h5> 
+                    <p>
+                        Meet in the Romny lab between 6-7AM.<br>
+                        Wether will be warm, wear footwear for rough terrain.<br>
+                        We will be launching from Howe, Expect the flight to last 3-5 hours.
+                    </p>                
+                </div>
             </div>
-            
-            <h3 class = "pt-3">News etc...</h3>
-            <div class="border p-3">Latest news and updates</div>
-        </div>
 
         <!-- Right Column for About Us and Pictures -->
         <div class="col-md-6">
@@ -145,7 +152,7 @@
             document.getElementById('calendar').innerHTML = calendarHtml;
         }
 
-        document.addEventListener('DOMContentLoaded', createCalendar);
+       // document.addEventListener('DOMContentLoaded', createCalendar);
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
