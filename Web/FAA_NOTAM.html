@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYU-I High Altitude Research Team (HART)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header-bg {
+            background-color: #000; /* Black background for the header */
+            color: #fff; /* White text for the header elements */
+        }
+        .nav-link {
+            color: #fff; /* White text for navigation links */
+        }
+        .nav-link:hover {
+            background-color: #333; /* Darker background on hover for links */
+        }
+        .nav-justified {
+            justify-content: center; /* Center navigation links */
+        }
+        #calendar {
+            max-width: 600px; /* Maximum width of the calendar */
+            margin: 0 auto; /* Center the calendar horizontally */
+        }
+        #calendar table {
+            width: 100%; /* Calendar table fills its container */
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <header class="header-bg">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-auto">
+                    <img src="pics/Logo.png" alt="Logo" style="width: 150px;"> <!-- Adjust path as needed -->
+                </div>
+                <div class="col">
+                    <h1>BYU-I High Altitude Research Team</h1>
+                    <h2>(HART)</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-justified">
+                        <li class="nav-item"><a href="https://www.byui.edu/physics/" target = "_blank" class="nav-link">Physics Department</a></li>
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="https://www.byui.edu/" target = "_blank" class="nav-link">BYUI-Home page</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Lidar Project</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+    <div class="container mt-4 border">
+        <h1 class = "d-flex justify-content-center"><u>Flight Regulations & NOTAMS</u></h1>
+        <p class = "d-flex justify-content-center text-center">
+            This section contains instructions for filing a NOTAM(Notice To Airman)<br>
+            and all pertentant FAA regulations for Free and Tethered Baloons.<br>
+            Make sure to keep this page up to date! 
+        </p>
+
+        <hr class="my-4">
+
+        <h2 class = "d-flex justify-content-center"><u>Regulations for Free Baloon flights</u></h2>
+        <p class = "d-flex justify-content-center text-center"> 
+            These are the need to know notes, the full regs are linked at the bottom of each section if you need them.
+        </p>
+
+        <h4 class = "d-flex justify-content-center">Most Important</h4>
+        <div class = "d-flex justify-content-center">
+            <ul class = "list-group list-group-flush list-group-numbered">
+                <li class = "list-group-item">Get ATC permission (101.33a)</li>
+                <li class = "list-group-item">
+                    Mostly clear day (use cut-down if it changes) (101.33b & 101.35a)<br>
+                    &nbsp&nbsp&nbsp&nbspNOTE: Cloud height of 60,000ft or greater required
+                </li>
+                <li class = "list-group-item">Do not launch near lots of people (101.33d).</li>
+                <li class = "list-group-item">You must have two independant cut-downs (101.35a1)<br>
+                    &nbsp&nbsp&nbsp&nbspNOTE: For us the second "cut-down" is the baloon popping</li>
+                <li class = "list-group-item">The baloon must be radar reflective in the 200-2700MHz range (101.35a3)</li>
+                <li class = "list-group-item"> Must not have a rope attached that is longer than 50ft (101.35c & d)</li>
+            </ul>
+        </div>
+        
+        <h4 class = "d-flex justify-content-center pt-4"> NOTAM Instructions and Questions</h4>
+        <p class = "text-center"> 
+            Current NOTAM number: <b>1-877-487-6867</b><br>
+            When your ready to file the NOTAM, call the number above and tell them you would like to file a NOTAM<br>
+            for a free unmanned baloon flight, Answer all questions asked. At the end of the call you will be given a NOTAM number<br>
+            <u><b>Make sure to write this down</b></u>, if you did not get it all, ask them to repeat it.<br>
+            They will then sign off by asking for your initals, they will then respond with theirs and hang up<br><br>
+            These are a list of all questions the FAA agent may ask you.<br>
+            What you will be asked will depend on who you get on the phone. 
+            I have put a star(*) next to things you will always be asked.<br>
+            Make sure to file the NOTAM 24hrs minimum before launch
+            <u><b>unless</b></u> a critical time element is happening (northern lights, eclispe, etc.)<br>
+
+        </p>
+        <div class = "d-flex justify-content-center">
+            <ul class = "list-group list-group-flush list-group-numbered">
+                <li class = "list-group-item">
+                    Balloon identification. *<br>
+                    &nbsp&nbsp&nbsp&nbspNOTE: They want to know that we are the BYU-I Physics dept.
+                </li>   
+                <li class = "list-group-item">
+                    Estimated Launch Time. *<br>
+                    &nbsp&nbsp&nbsp&nbspNOTE: Make sure to specify Mountan time, you may have an agnet on the east coast.
+                </li>          
+                <li class = "list-group-item">
+                    Location of Launch *<br>
+                    &nbsp&nbsp&nbsp&nbspNOTE: They will want coordnets, make sure they are in <u><b>Hours, Minutes, Seconds</b></u>.
+                </li>  
+                <li class = "list-group-item">
+                    Cruising Altitude *<br>
+                    &nbsp&nbsp&nbsp&nbspNOTE: Asnwer this one <b>"Unlimited"</b>, as we want the baloon to go as heigh as possible
+                </li>  
+                <li class = "list-group-item">
+                    Forecasted trajectory or Direction of travel *<br>
+                    &nbsp&nbsp&nbsp&nbspNOTE: they want a compas directin, as in <b>"North East"</b> or <b>"East North East"</b>.
+                </li>   
+                <li class = "list-group-item">
+                    Duration of Flight *<br>
+                    &nbsp&nbsp&nbsp&nbspNOTE: Free Baloon flights typicly last 2 hrs.
+                </li>   
+                <li class = "list-group-item">
+                    Length and diamiter of baloon<br>
+                    &nbsp&nbsp&nbsp&nbspNOTE: You can esitmate the payload len, we are usaly between 15-25ft. <br> 
+                    &nbsp&nbsp&nbsp&nbspFind diamiter info to insert here
+                </li>
+                <li class = "list-group-item">
+                    Weight of payload<br>
+                    &nbsp&nbsp&nbsp&nbspNOTE: Use the payload weight in Kg or Lbs on your pre-flight check list.
+                </li>
+                <li class = "list-group-item">
+                    Time and location of impact with Earth<br>
+                    &nbsp&nbsp&nbsp&nbspNOTE: Use the info from the flight precictor to give this, it is estimated.
+                </li>     
+                <li class = "list-group-item">
+                    Phone number<br>
+                    &nbsp&nbsp&nbsp&nbspNOTE: Give them the fligt lead or the advising professors number. 
+                </li>  
+            
+            </ul>
+        </div>
+        <h3 class = "nav-item d-flex justify-content-center pt-2">
+            <a target="_blank" href= "https://github.com/hartbyui/HART/blob/main/FAA%20Regulations/FAA%20Regulations%20(up%20to%20date%20as%20of%205-10-2024).pdf">
+                Free Baloon FAA Regulations
+            </a>
+        </h3>
+
+
+        <div class="d-flex justify-content-center pt-3">
+            <a href="reff.html"><button type="button" class="btn btn-primary btn-lg">Back</button></a>
+        </div>
+        <div class="pt-3"></div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
