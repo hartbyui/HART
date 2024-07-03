@@ -1,1 +1,6 @@
-18:24:56.0, Date: 1/6/24, Fix: 1,  quality: 2, Location: 44.2555N, 111.7962, W, Speed (knots): , 9.51, Angle: 236.42, Altitude: 26460.80, Satellites: 10
+17:0:48.0, Date: 29/6/24, Fix: 1,  quality: 2, Location: 43.9336N, 112.4899, W, Speed (knots): , 22.22, Angle: 255.25, Altitude: 24714.30, Satellites: 10
+17:0:50.0, Date: 29/6/24, Fix: 1,  quality: 2, Location: 43.9336N, 112.4900, W, Speed (knots): , 6.00, Angle: 278.53, Altitude: 24625.00, Satellites: 10
+17:0:52.0, Date: 29/6/24, Fix: 1,  quality: 2, Location: 43.9337N, 112.4902, W, Speed (knots): , 16.28, Angle: 284.77, Altitude: 24531.70, Satellites: 10
+17:0:55.0, Date: 29/6/24, Fix: 1,  quality: 2, Location: 43.9337N, 112.4903, W, Speed (knots): , 10.09, Angle: 258.61, Altitude: 24396.90, Satellites: 10
+17:0:56.984, Date: 29/6/24, Fix: 1,  quality: 2, Location: 43.9338N, 112.4904, W, Speed (knots): , 14.91, Angle: 338.92, Altitude: 24307.30, Satellites: 10
+17:0:59.0, Date: 29/6/24, Fix: 1,  quality: 2, Location: 43.9339N, 112.4906, W, Speed (knots): , 9.57, Angle: 354.51, Altitude: 24222.20, Satellites: 10
