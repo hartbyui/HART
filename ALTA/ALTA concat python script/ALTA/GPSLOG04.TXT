@@ -1,1 +1,0 @@
-17:0:4.984, Date: 29/6/24, Fix: 1,  quality: 2, Location: 43.9333N, 112.4863, W, Speed (knots): , 17.55, Angle: 248.63, Altitude: 26841.80, Satellites: 10
